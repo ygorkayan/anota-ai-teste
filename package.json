@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "jest",
+    "test:jest": "jest",
+    "test:cypress": "npx cypress run",
     "cypress": "npx cypress open"
   },
   "private": true,
