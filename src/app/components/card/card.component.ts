@@ -1,10 +1,12 @@
 import { Component, Input } from "@angular/core";
+import { Close } from "./close/close.component";
 
 @Component({
   selector: "card-component",
   standalone: true,
   templateUrl: "./card.component.html",
   styleUrl: "./card.component.css",
+  imports: [Close]
 })
 export class CardComponent {
   private limitOfTextInCharacter = 200;

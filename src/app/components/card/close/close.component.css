@@ -1,0 +1,8 @@
+.svg {
+  transform: scale(0.8);
+  color: var(--gray-strong);
+}
+
+.svg:hover {
+  color: var(--red-strong);
+}

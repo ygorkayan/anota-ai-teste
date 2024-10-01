@@ -11,12 +11,13 @@
 .card__delete {
   z-index: 1;
   top: -10px;
+  width: 28px;
+  height: 28px;
   right: -10px;
   cursor: pointer;
   position: absolute;
   border-radius: 90px;
   transition: all 300ms;
-  padding: 4px 4px 0 4px;
   border: 1px solid var(--gray);
   background-color: var(--white);
 }
@@ -43,6 +44,7 @@
 .card__img-img {
   width: 100%;
   height: 150px;
+  object-fit: cover;
 }
 
 .card__img-flag {
