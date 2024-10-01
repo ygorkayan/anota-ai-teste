@@ -1,0 +1,23 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+:root {
+  --gray: #efefef;
+  --gray-strong: #4b4b4b;
+  --white: #fff;
+  --black: #00000e;
+  --soft-gray: #999;
+  --shadow-gray: #dedede;
+  --blue: #1885ce;
+  --blue-strong: #0357fe;
+  --red-strong: #fd014a;
+  --mustard-strong: #938b0a;
+}
+
+body {
+  background-color: var(--gray);
+}

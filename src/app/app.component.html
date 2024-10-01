@@ -1,0 +1,31 @@
+<header-component [title]="title" [subtitle]="subtitle"></header-component>
+
+<div class="search">
+  <search-component [onChange]="onSearchChange()"></search-component>
+</div>
+
+<div *ngIf="cards.length > 0" class="card">
+  @for (card of getCardsToShow(); track card.id) {
+  <card-component
+    [srcImage]="card.img"
+    [title]="card.title"
+    [description]="card.description"
+    [type]="card.type"
+    [handlerDelete]="deleteCard(card.id)"
+    s
+  ></card-component>
+  }
+</div>
+
+<div *ngIf="cards.length === 0" class="card">
+  <div class="feedback__msg">
+    <p id="cards-deleted" class="feedback__msg-text">Todos os cards foram deletados, deseja recarregar?</p>
+    <button id="reload-cards" class="feedback__msg-btn" (click)="getCards()">Recarregar</button>
+  </div>
+</div>
+
+<div *ngIf="getCardsToShow().length === 0 && cards.length >= 1" class="card">
+  <div class="feedback__msg">
+    <p id="not-found" class="feedback__msg-text">Termo buscado não encontrado, por favor, refaça a pesquisa.</p>
+  </div>
+</div>
