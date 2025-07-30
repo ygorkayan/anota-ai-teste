@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
   constructor(private http?: HttpClient) {}
 
   title = "Teste de Desenvolvedor Front-End - Anota Ai";
-  subtitle = "Teste branch winning-2";
+  subtitle = "Teste branch winning-2-2";
   cards: Card[] = [];
 
   ngOnInit() {
